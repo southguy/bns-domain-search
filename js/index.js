@@ -13,7 +13,7 @@ const url = `https://stacks-node-api.mainnet.stacks.co/v1/names/${name}`;
     throw new Error(message);
   }
   const data = await response.json();
-  console.log(data);
+
   
   document.getElementById('status').innerHTML=data.status;
   document.getElementById('address').innerHTML=data.address;
